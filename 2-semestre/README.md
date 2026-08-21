@@ -2,8 +2,8 @@
 ## Disciplinas
 
 ###  [Engenharia de Software I](./engenharia-de-software-1/)
-* **Foco:** Ciclo de vida de software, levantamento e análise de requisitos, metodologias ágeis (Scrum/Kanban) e diagramas de modelagem.
-* **Atividades:** Documentações, diagramas UML e especificações de projetos.
+*  Ciclo de vida de software, levantamento e análise de requisitos, metodologias ágeis (Scrum/Kanban) e diagramas de modelagem.
+
 
 ###  [Banco de Dados I](./banco-de-dados-1/)
 *  Modelagem conceitual (MER), lógica (DER), normalização e manipulação de dados via SQL (DDL e DML).
