@@ -1,0 +1,73 @@
+# ==========================================
+# Ambientes e Editores (VS Code, JetBrains)
+# ==========================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# ==========================================
+# Arquivos de Sistema Operacional
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# C / C++ (Arquivos compilados e executáveis)
+# ==========================================
+*.o
+*.obj
+*.exe
+*.out
+*.app
+*.dSYM/
+
+# ==========================================
+# Java (Compilados e pacotes)
+# ==========================================
+*.class
+*.jar
+*.war
+*.ear
+target/
+bin/
+
+# ==========================================
+# Python (Cache e ambientes virtuais)
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+*.env
+
+# ==========================================
+# Node.js / Web (Dependências)
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+
+# ==========================================
+# Bancos de Dados Locais e Chaves
+# ==========================================
+*.sqlite
+*.sqlite3
+*.db
+*.log
+.env
+.env.local
