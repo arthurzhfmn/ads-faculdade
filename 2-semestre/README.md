@@ -1,7 +1,7 @@
 #  2º Semestre
 ## Disciplinas
 
-###  [Engenharia de Software I](./engenharia-de-software-1/)
+###  [Engenharia de Software I](./engenharia-de-software/)
 *  Ciclo de vida de software, levantamento e análise de requisitos, metodologias ágeis (Scrum/Kanban) e diagramas de modelagem.
 
 
@@ -17,7 +17,7 @@
 *  Desenvolvimento Back-End com PHP, Formulários e interação com banco de dados MySQL.
 
 
-###  [Desenvolvimento Web para Dispositivos Móveis](./desenvolvimento-web-mobile/)
+###  [Desenvolvimento Web para Dispositivos Móveis](./desenvolvimento-web-reponsivo/)
 *  Interfaces responsivas, layouts fluidos (Flexbox/Grid), Mobile-First, Viewport, Web Apps e consumo de APIs em ambientes mobile.
 ---
 
