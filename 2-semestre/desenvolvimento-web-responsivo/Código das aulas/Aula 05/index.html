@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation CSS</title>
+    <style type="text/css">
+        .move{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            border-radius: 5px;
+            /* 2.Vincular a animação a algum elemento HTML */
+            animation-name: cores;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards; /* Para a animação na posição final */
+            /* animation-fill-mode: backwards;  Para a animação na posição inicial*/
+            animation-iteration-count: infinite; /* Quantas vezes a animação se repete*/
+            animation-direction: alternate; /* Vai e volta*/
+        }
+
+        .rocket{
+            margin-top: 200px;
+        }
+
+        .rocket img{
+            animation: nave 5s ease infinite;
+        }
+
+
+        /* 1.Desenvolver os estilos da animação */
+        @keyframes cores{
+            from{
+                background: blue;
+                margin-left: 0;
+                transform: rotate(0);}
+            
+            to{
+                background: red;
+                margin-left: 85%;
+                transform: rotate(720deg);
+            }
+        }
+
+        @keyframes nave{
+            0%{
+                margin-left:0;
+                transform: rotate(0);
+            }
+            10%{
+                margin-left: 0;
+                transform: rotate(45deg);
+            }
+
+            50%{
+                margin-left: calc(100% - 75px);
+                transform: rotate(45deg);
+            }
+
+            60%{
+                margin-left: calc(100% - 75px);
+                transform: rotate(-143deg);
+            }
+
+            90%{
+                margin-left: 0;
+                transform: rotate(-135deg);
+            }
+
+            100%{
+                margin-left: 0;
+                transform: rotate(0);
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="move"></div>
+
+    <div class="rocket"> <img src="foguete.png" alt="Foguete"></div>
+</body>
+</html>
