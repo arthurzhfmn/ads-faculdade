@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.topo {
+    background-color: #080808;
+    overflow: hidden;
+    padding: 5px 25px;
+}
+
+.logo {
+    color: #080808;
+    font-size: 34px;
+    font-weight: bold;
+    font-style: italic;
+    float: left;
+    text-shadow: 0 0 10px #fff;
+}
+
+.topo nav{
+    float: right;
+}
+
+.menu li {
+    list-style: none;
+    display: inline-block;
+}   
+
+.menu li a {
+    color: #AE5BF6;
+    text-decoration: none;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.coluna {
+    width: 25%;
+    float: left;
+    padding: 5px 5px;
+    /* Recalcula a largura do elemento, levando em consideração seu padding */
+    box-sizing: border-box;
+}
+
+.coluna img {
+    width: 100%;
+    border-radius: 4px 0;
+    /* Ajusta a imagem dentro da tag img */
+    object-fit: contain;
+}
+
+.coluna h2 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.card {
+    border: solid 1px #DDD;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
