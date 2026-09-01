@@ -28,6 +28,43 @@
             animation: nave 5s ease infinite;
         }
 
+        body{margin:0;}
+
+        .topo{
+            background: linear-gradient(blue, darkblue);
+            padding: 10px 5px;
+            margin-bottom: 100px;
+        }
+
+        .logo img{
+            transform: translateX(-140px);
+            animation: logo 3s ease forwards;
+        }
+
+        @keyframes logo{
+            0%{
+                transform: translateX(-140ox);
+            }
+            85%{
+                transform: translateX(40px);
+            }
+
+            70%{
+                transform: translateX(40px) rotate(0);
+            }
+
+            85%{
+                transform: translateX(40px) rotate(-15deg);
+            }
+
+            90%{
+                transform: translateX(40px) rotate(0);
+            }
+
+            100%{
+                transform: translateX(0) rotate(0);
+            }
+        }
 
         /* 1.Desenvolver os estilos da animação */
         @keyframes cores{
@@ -74,9 +111,44 @@
             }
         }
     
+        .load{
+            margin: 40px;
+            text-align: center;
+        }
+        .load .circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: yellow;
+            display: inline-block;
+            margin: 0 7px;
+            animation: loading 0.7s linear infinite alternate;
+        }
+
+        .load .circle:nth-child(2){animation-delay: 0.1s;}
+        .load .circle:nth-child(3){animation-delay: 0.2s;}
+        .load .circle:nth-child(4){animation-delay: 0.3s;}
+        .load .circle:nth-child(5){animation-delay: 0.4s;}
+
+        @keyframes loading{
+            0%{background: rgb(0, 195, 255); transform: scale(1);}
+            33%{background: rgb(9, 153, 189); transform: scale(1.1);}
+            66%{background-color: blue; transform: scale(1.2);}
+            100%{background-color: rgb(62, 5, 194); transform: scale(1.3);}
+        }
     </style>
 </head>
 <body>
+    <div class="load">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <header class="topo">
+        <div class="logo"> <img src="peixe-roxo.png" alt="Peixe roxo"> </div>
+    </header>
     <div class="move"></div>
 
     <div class="rocket"> <img src="foguete.png" alt="Foguete"></div>
