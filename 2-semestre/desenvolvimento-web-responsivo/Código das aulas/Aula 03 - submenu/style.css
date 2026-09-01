@@ -1,0 +1,187 @@
+body{
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+}
+
+#topo{
+    background: #f7f7f7;
+    height: 180px;
+    padding-top: 35px;
+}
+
+.simbolo{
+    width: 120px;
+    height: 120px;
+    background: #9406b8;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 2px solid transparent;
+    /* transition-property: background; */
+    transition-property: all; /* Aplica a transição em todos os estilos */
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.simbolo:hover{
+    background: #d32bfc;
+    border: solid 2px #9406b8;
+}
+
+.menu{
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+    margin-top: 40px;
+    background-color: #333;
+}
+
+.menu li{
+    display: inline-block
+}
+
+.menu a{
+    text-decoration: none;
+    color: #d32bfc;
+    padding: 10px 15px;
+    font-size: 20px;
+    transition: 0.2s linear;
+}
+
+.menu a:hover{
+    color: #f7f7f7;
+}
+
+/* Submenu - DropDown */
+.submenu {
+    position: relative;
+}
+
+.outros-servicos {
+    width: 160px;
+    box-sizing: border-box;
+    background: #f7f7f7;
+    position: absolute;
+    padding: 10px 5px;
+    margin-top: 10px;
+    text-align: left;
+    opacity: 0;
+    /* Deixa o elemento atrás da tela, como se todo o resto tivesse na camada acima, para ele nao ser selecionado */
+    z-index: -1;
+    transition: all 0.2s linear;
+    /* Aplicando altura fixa para desenvolver um efeito */
+    height: 0;
+}
+
+.outros-servicos li {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    border-bottom: dashed 1px #d32bfc;
+    transition: all 0.3s linear;
+}
+
+.outros-servicos li a {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    transition: all 0.3s linear;
+}
+
+.outros-servicos li:last-child {
+    border: none;
+}
+
+.outros-servicos li:hover {
+    background-color: #d32bfc;
+}
+
+.outros-servicos li:hover a {
+    color: #f7f7f7;
+}
+
+/* Quando tiver com o mouse encima do "submenu" vai editar o "outros-servicos" */
+.submenu:hover .outros-servicos{
+    opacity: 1;
+    z-index: 1;
+    height: 270px;
+}
+
+.conteudo h2{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.car img{
+    vertical-align: middle;
+    transition: all 3s;
+}
+
+/* Dispara o efeito quando o checkbox estiver marcado */
+#acionar:checked + .carros img{
+    margin-left: 85%;
+}
+
+.carros .car:first-child img{
+    transition-timing-function: linear;
+}
+
+.carros .car:nth-child(2) img{
+    transition-timing-function: ease;
+}
+
+.carros .car:nth-child(3) img{
+    transition-timing-function: ease-in;
+}
+
+.carros .car:nth-child(4) img{
+    transition-timing-function: ease-out;
+}
+
+.carros .car:last-child img{
+    transition-timing-function: cubic-bezier(0.71, -0.27, 0, 1.26);
+}
+
+.galeria{
+    margin: 100px 40px;
+}
+
+.foto{
+    width: 250px;
+    position: relative;
+    border: dashed 2px red
+}
+
+.foto::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+.foto:hover::before{
+    background: rgba(0, 0, 0, 0);
+}
+
+.foto::after{
+    content: "Foto do inseto";
+    display: block;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    bottom: -20x;
+}
+
+.foto:hover::after{
+    left: 0;
+    bottom: 0;
+    text-shadow: 1px 1px 2px #000;
+}
+.foto img{
+    width: 100%;
+    display: block;
+}
