@@ -17,7 +17,7 @@
 *  Desenvolvimento Back-End com PHP, Formulários e interação com banco de dados MySQL.
 
 
-###  [Desenvolvimento Web para Dispositivos Móveis](./desenvolvimento-web-reponsivo/)
+###  [Desenvolvimento Web para Dispositivos Móveis](./desenvolvimento-web-responsivo/)
 *  Interfaces responsivas, layouts fluidos (Flexbox/Grid), Mobile-First, Viewport, Web Apps e consumo de APIs em ambientes mobile.
 ---
 
