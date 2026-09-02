@@ -1,0 +1,20 @@
+Aula 01 - Banco de dados
+Primeiro objetivo para modelar dados:
+Identificar objetos do mundo real e entidades relevantes, de acordo com o negócio
+
+Todo banco de dados tem um sistema que gerencia o banco (SGBD)
+Sistema de banco de dados (SBD): é constituído pelo banco de dados
+propriamente dito e o software necessário para gerenciá-lo (SGBD) e
+manipulá-lo (consultas e aplicações do usuário).
+
+Um sistema é construído por:
+Sistema = Processo + SBD OU SEJA, Sistema = Processo + (SGBD + Banco)
+
+BANCO DE DADOS RELACIONAL:
+Composto por um único tipo de construção: a tabela
+Uma tabela é composta por linhas e colunas
+As colunas de uma tabela serão as propriedades do objeto relevante
+
+02/09
+Generalização e especialização - Representação por Triângulo
+Se generaliza informações comuns, como nome, CPF, RG e especializa em outra tabela
