@@ -23,4 +23,4 @@
 
 ##  Tecnologias & Ferramentas do Semestre
 * **Linguagens:** SQL, JavaScript, HTML5, CSS3, Python
-* **Ferramentas:** Git, GitHub, VS Code, SGBDs (PostgreSQL/MySQL), Modeladores de Banco (brModelo/Workbench)
+* **Ferramentas:** Git, GitHub, VS Code, SGBDs (PostgreSQL/MySQL/Oracle), Modeladores de Banco (brModelo/Workbench)
