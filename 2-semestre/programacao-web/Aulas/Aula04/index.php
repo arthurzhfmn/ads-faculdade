@@ -10,55 +10,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="topo">
-        <div class="logo">LOGO</div>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="cardapio.php">Cardápio</a></li>
-                <li><a href="sobre.php">Sobre</a></li>
-                <li><a href="reservas.php">Reservas</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Topo do site -->
+     <!-- require para todo o sistema -->
+     <?php require 'layout/topo.php'; ?>
     <section class="banner">
         <div class="infos">
             <h2>Conheça nossas</h2>
             <h1>Receitas Especiais</h1>
             <p>Venha conhecer nossos pratos com receitas exclusivas vindas direto da Ilha das Cobras e dos Gatos localizados na Malásia</p>
         </div>
-        <div class="imagem"></div>
     </section>
+
     <section class="sobre">
-        <div class="infos">
-            <h2>Conheça nossa história</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae autem aperiam debitis cumque, esse mollitia dolores incidunt vitae eos dolore nostrum inventore odit, ipsa excepturi, consequuntur qui cum! Quo, ducimus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam delectus natus repellat aliquid dolorem distinctio, pariatur excepturi fugit unde! Veniam optio error ratione placeat labore quasi quidem voluptates deleniti repellat.</p>
-        </div>
-        <div class="imagem"></div>
+        <!-- include só para o arquivo layout/empresa.php, caso não encontre o arquivo, o sistema continua funcionando -->
+        <?php include 'layout/empresa.php'; ?>
     </section>
+
     <section class="pratos">
         <div class="container">
             <div class="row">
-                <div class="imagem"></div>
+                <div class="imagem"><img src="images/comida.jpg" alt="Comida"></div>
                 <h3>Receita 1</h3>
             </div>
-            <div class="container">
             <div class="row">
-                <div class="imagem"></div>
+                <div class="imagem"><img src="images/comida.jpg" alt="Comida"></div>
                 <h3>Receita 2</h3>
             </div>
-            <div class="container">
             <div class="row">
-                <div class="imagem"></div>
+                <div class="imagem"><img src="images/comida.jpg" alt="Comida"></div>
                 <h3>Receita 3</h3>
             </div>
-            <div class="container">
             <div class="row">
-                <div class="imagem"></div>
+                <div class="imagem"><img src="images/comida.jpg" alt="Comida"></div>
                 <h3>Receita 4</h3>
             </div>
         </div>
     </section>
+
     <footer class="rodape">
-        <p>Todos os direitos reservados &copy; 2026 Restaurante João Protagonista</p>
+        <?php include "layout/rodape.php"; ?>
     </footer>
