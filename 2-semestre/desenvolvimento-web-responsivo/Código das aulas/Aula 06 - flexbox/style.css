@@ -29,22 +29,38 @@ body{
     font-size: 56px;
 }
 
-.column:nth-child(2){
+.container .column:nth-child(2){
     height: 100px;
 }
 
-.column:nth-child(3){
+.container .column:nth-child(3){
     height: 130px;
 }
 
-.column:nth-child(4){
+.container .column:nth-child(4){
     height: 150px;
 }
 
-.column:nth-child(5){
+.container .column:nth-child(5){
     height: 170px;
 }
 
-.column:nth-child(6){
+.container .column:nth-child(6){
     height: 190px;
+}
+
+.container-dark{
+    background: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-dark .column{
+    background: #ddd;
+    color: #333;
+}
+
+.container-dark .column:first-child{
+    flex-grow: 1;
 }
