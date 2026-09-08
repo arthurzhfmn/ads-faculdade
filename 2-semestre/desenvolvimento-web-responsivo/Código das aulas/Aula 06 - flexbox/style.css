@@ -6,9 +6,11 @@ body{
 .container{
     background: #f7f7f7;
     min-height: 500px;
+    display: flex;
+
 }
 
-.row{
+.column{
     background: #333;
     color: #fff;
     border-radius: 10px;
