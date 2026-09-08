@@ -4,10 +4,20 @@ body{
 }
 
 .container{
+    border-top: solid 1px #333;
+    border-bottom: solid 1px #333;
     background: #f7f7f7;
-    min-height: 500px;
     display: flex;
-
+    flex-direction: row;
+    /* row - row reverse - column - column reverse */
+    flex-wrap: wrap;
+    /*wrap - nowrap (não derruba a linha)*/
+    justify-content: center;
+    /* start - end - center - 
+    space-between - -space-evenly - space-around */
+    height: 300px;
+    align-content: end; /*alinha o bloco*/
+    align-items: end; /*alinha o conteúdo do bloco*/
 }
 
 .column{
@@ -17,4 +27,24 @@ body{
     border: solid 1px #fff;
     padding: 25px;
     font-size: 56px;
+}
+
+.column:nth-child(2){
+    height: 100px;
+}
+
+.column:nth-child(3){
+    height: 130px;
+}
+
+.column:nth-child(4){
+    height: 150px;
+}
+
+.column:nth-child(5){
+    height: 170px;
+}
+
+.column:nth-child(6){
+    height: 190px;
 }
