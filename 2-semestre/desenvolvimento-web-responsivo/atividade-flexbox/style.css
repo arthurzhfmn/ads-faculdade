@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container, 
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 350px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+.abelha-preto,
+.abelha-flor {
+    width: 23.5%;
+}
+
+.abelha-preto {
+    height: 100%;
+}
+
+.abelha-flor {
+    height: 47%; 
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
