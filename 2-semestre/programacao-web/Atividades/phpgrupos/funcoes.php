@@ -50,7 +50,7 @@ echo $res;
 //EXEMPLO 2 :
 
 $text2 = "xOlá Mundo!xx";
-$res2 = trim($text2, "x");
+$res2 = trim($text2, "x");''
 echo $res2;
 
 
