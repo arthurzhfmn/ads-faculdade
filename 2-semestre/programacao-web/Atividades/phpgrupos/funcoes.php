@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ucwords $ ucfirst</title>
-    <style>input{display:block; margin-bottom: 8px; padding: 8px 5px;}</style>
+    <style>.textos{display:block; margin-bottom: 8px; width:250px; padding: 8px 5px;}</style>
 </head>
 <body>
     <form action="" method="post">
-        <input type="text" name="nome" placeholder="Digite seu primeiro nome">
-        <input type="text" name="sobrenome" placeholder="Digite seu sobrenome completo">
-        <input type="text" name="filme_fav" placeholder="Filme favorito">
+        <input class="textos" type="text" name="nome" placeholder="Digite seu primeiro nome">
+        <input class="textos" type="text" name="sobrenome" placeholder="Digite seu sobrenome completo">
+        <input class="textos" type="text" name="filme_fav" placeholder="Filme favorito">
         <input type="submit" name="enviar">
     </form>
 </body>
