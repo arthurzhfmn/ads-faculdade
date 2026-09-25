@@ -12,8 +12,8 @@ if (isset($_POST['logar'])){
             $_SESSION['usuario'] = $usuario;
             $_SESSION['email'] = $email;
             $_SESSION['ativa'] = true;
-
-            echo "<a href='admin.php'>Acessar Admin</a>";
+            // Redirecionar página
+            header("location: admin.php");
         }else{
             echo "Email ou senha incorretos.";
         }
