@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 110, 110)
+}
+
+#carro, #moto{display: none;}
+#bike{display:block;}
+
+@media (min-width: 497px){
+    #carro, #bike{
+        display: none
+    }
+
+    #moto{
+        display: block;
+    }
+}
+
+@media (min-width: 643px){
+    #moto, #bike{
+        display: none
+    }
+
+    #carro{
+        display: block;
+    }
+}
