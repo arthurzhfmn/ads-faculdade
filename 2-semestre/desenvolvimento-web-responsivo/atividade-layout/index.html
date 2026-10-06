@@ -24,7 +24,7 @@
 
             <li class="item-pesquisa">
                 <form action="#" method="get">
-                    <input type="search" placeholder="Pesquisar na galeria...">
+                    <input type="search" placeholder="🔍Pesquisar na galeria...">
                 </form>
             </li>
         </ul>
@@ -46,11 +46,11 @@
         <h2>Inspire-se em sites criativos e envie o seu próprio</h2>
 
         <div class="filtros">
-            <button class="filtro-button">Em alta</button>
-            <button class="filtro-button ativo">Recentes</button>
+            <button class="filtro-button" id="tab-em-alta">Em alta</button>
+            <button class="filtro-button ativo" id="tab-recentes">Recentes</button>
         </div>
 
-        <div class="galeria-cards">
+        <div class="galeria-cards" id="conteudos-recentes">
             <article class="card">
                 <div class="card-imagem">
                 <img src="images/estatua.jpg" alt="Estátua">
@@ -154,7 +154,113 @@
                     <a href="#" class="btn-abrir">Abrir</a>
                 </div>
             </article>
-        </div> <!--Fim da div galeria-cards-->
+        </div> <!--Fim da div galeria-cards recentes-->
+
+        <div class="galeria-cards" id="conteudos-em-alta" style="display:none;">
+            <article class="card">
+                <div class="card-imagem">
+                    <img src="images/dinheiro.jpg" alt="Dinheiro">
+                </div>
+                <div class="card-info">
+                    <div class="card-texto">
+                        <h3>Dinheiro</h3>
+                        <p>altosganhos.com</p>
+                    </div>
+                    <a href="#" class="btn-abrir">Abrir</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-imagem">
+                    <img src="images/dinheiro.jpg" alt="Dinheiro">
+                </div>
+                <div class="card-info">
+                    <div class="card-texto">
+                        <h3>Dinheiro</h3>
+                        <p>altosganhos.com</p>
+                    </div>
+                    <a href="#" class="btn-abrir">Abrir</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-imagem">
+                    <img src="images/dinheiro.jpg" alt="Dinheiro">
+                </div>
+                <div class="card-info">
+                    <div class="card-texto">
+                        <h3>Dinheiro</h3>
+                        <p>altosganhos.com</p>
+                    </div>
+                    <a href="#" class="btn-abrir">Abrir</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-imagem">
+                    <img src="images/dinheiro.jpg" alt="Dinheiro">
+                </div>
+                <div class="card-info">
+                    <div class="card-texto">
+                        <h3>Dinheiro</h3>
+                        <p>altosganhos.com</p>
+                    </div>
+                    <a href="#" class="btn-abrir">Abrir</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-imagem">
+                    <img src="images/dinheiro.jpg" alt="Dinheiro">
+                </div>
+                <div class="card-info">
+                    <div class="card-texto">
+                        <h3>Dinheiro</h3>
+                        <p>altosganhos.com</p>
+                    </div>
+                    <a href="#" class="btn-abrir">Abrir</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-imagem">
+                    <img src="images/dinheiro.jpg" alt="Dinheiro">
+                </div>
+                <div class="card-info">
+                    <div class="card-texto">
+                        <h3>Dinheiro</h3>
+                        <p>altosganhos.com</p>
+                    </div>
+                    <a href="#" class="btn-abrir">Abrir</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-imagem">
+                    <img src="images/dinheiro.jpg" alt="Dinheiro">
+                </div>
+                <div class="card-info">
+                    <div class="card-texto">
+                        <h3>Dinheiro</h3>
+                        <p>altosganhos.com</p>
+                    </div>
+                    <a href="#" class="btn-abrir">Abrir</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-imagem">
+                    <img src="images/dinheiro.jpg" alt="Dinheiro">
+                </div>
+                <div class="card-info">
+                    <div class="card-texto">
+                        <h3>Dinheiro</h3>
+                        <p>altosganhos.com</p>
+                    </div>
+                    <a href="#" class="btn-abrir">Abrir</a>
+                </div>
+            </article>
+        </div> <!--FIm da div galeria-cards em alta-->
     </main>
 
     <script>
@@ -175,6 +281,25 @@
 
         btnComunidade.addEventListener('click', abrirMenu);
         mascara.addEventListener('click', fecharMenu);
+
+        const tabEmAlta = document.getElementById('tab-em-alta');
+        const tabRecentes = document.getElementById('tab-recentes');
+        const conteudoEmAlta = document.getElementById('conteudos-em-alta');
+        const conteudoRecentes = document.getElementById('conteudos-recentes');
+
+        tabEmAlta.addEventListener('click', () => {
+            tabEmAlta.classList.add('ativo');
+            tabRecentes.classList.remove('ativo');
+            conteudoEmAlta.style.display = 'grid';
+            conteudoRecentes.style.display = 'none';
+        });
+
+        tabRecentes.addEventListener('click', () => {
+            tabRecentes.classList.add('ativo');
+            tabEmAlta.classList.remove('ativo');
+            conteudoRecentes.style.display = 'grid';
+            conteudoEmAlta.style.display = 'none';
+        });
     </script>
 </body>
 </html>
