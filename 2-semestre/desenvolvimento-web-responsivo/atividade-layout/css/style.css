@@ -1,0 +1,253 @@
+/* ==========================================================================
+   RESET E CONFIGURAÇÕES GERAIS
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0b0b0b;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  padding-bottom: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ==========================================================================
+   HEADER / NAVEGAÇÃO
+   ========================================================================== */
+header {
+  position: sticky;
+  top: 0;
+  background-color: #0b0b0b;
+  border-bottom: 1px solid #1a1a1a;
+  padding: 14px 32px;
+  z-index: 100;
+}
+
+header > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+header ul .left a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+header ul .centro {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+}
+
+header ul .centro li a {
+  font-size: 14px;
+  color: #888888;
+  transition: color 0.2s ease;
+}
+
+header ul .centro li a:hover {
+  color: #ffffff;
+}
+
+header ul .item-pesquisa {
+  display: flex;
+  align-items: center;
+}
+
+header ul .item-pesquisa input {
+  background-color: #171717;
+  border: 1px solid #292929;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 8px 14px;
+  font-size: 13px;
+  outline: none;
+  width: 210px;
+  transition: border-color 0.2s ease, width 0.2s ease;
+}
+
+header ul .item-pesquisa input:focus {
+  border-color: #444444;
+  width: 240px;
+}
+
+header ul .item-pesquisa input::placeholder {
+  color: #737373;
+}
+
+/* ==========================================================================
+   CONTEÚDO PRINCIPAL (MAIN)
+   ========================================================================== */
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px 32px;
+}
+
+main h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+
+main h2 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #888888;
+  margin-bottom: 32px;
+}
+
+/* ==========================================================================
+   SELETOR DE ABAS (FILTROS)
+   ========================================================================== */
+.filtros {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #141414;
+  border: 1px solid #222222;
+  padding: 3px;
+  border-radius: 8px;
+  margin-bottom: 28px;
+}
+
+.filtro-button {
+  background: transparent;
+  border: none;
+  color: #888888;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filtro-button:hover {
+  color: #cccccc;
+}
+
+.filtro-button.ativo {
+  background-color: #242424;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   GRID DA GALERIA E CARDS
+   ========================================================================== */
+.galeria-cards {
+  display: grid;
+  /* 4 colunas no desktop, ajustando automaticamente conforme o espaço */
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-imagem {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background-color: #171717;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #1f1f1f;
+}
+
+.card-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-imagem img {
+  transform: scale(1.02);
+}
+
+/* Informações abaixo da imagem */
+.card-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.card-texto h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #efefef;
+}
+
+.card-texto p {
+  font-size: 12px;
+  color: #6e6e6e;
+}
+
+/* Botão Abrir */
+.btn-abrir {
+  background-color: #1a1a1a;
+  color: #d4d4d4;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 6px;
+  border: 1px solid #292929;
+  transition: all 0.2s ease;
+}
+
+.btn-abrir:hover {
+  background-color: #262626;
+  color: #ffffff;
+  border-color: #3a3a3a;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE (TELAS MENORES)
+   ========================================================================== */
+@media (max-width: 768px) {
+  header ul {
+    gap: 16px;
+  }
+
+  header .item-pesquisa input {
+    width: 140px;
+  }
+
+  header .item-pesquisa input:focus {
+    width: 170px;
+  }
+
+  main {
+    padding: 28px 16px;
+  }
+
+  .galeria-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
