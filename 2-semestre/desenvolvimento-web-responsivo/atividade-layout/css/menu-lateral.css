@@ -1,0 +1,67 @@
+/* ==========================================================================
+   MÁSCARA DE FUNDO (BACKDROP)
+   ========================================================================== */
+.mask {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(2px);
+  z-index: 150;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none; /* Não bloqueia cliques quando invisível */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.mask.ativo {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto; /* Volta a capturar o clique para fechar */
+}
+
+/* ==========================================================================
+   MENU LATERAL
+   ========================================================================== */
+aside#abrir {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 260px;
+  height: 100vh;
+  background-color: #111111;
+  border-right: 1px solid #222222;
+  padding: 32px 24px;
+  z-index: 200;
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.5);
+  transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
+}
+
+aside#abrir.ativo {
+  left: 0;
+}
+
+.menu-lateral {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.menu-lateral li a {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #a3a3a3;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.menu-lateral li a:hover {
+  color: #ffffff;
+  background-color: #1a1a1a;
+}
