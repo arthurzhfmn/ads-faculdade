@@ -5,25 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade Layout</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu-lateral.css">
 </head>
 <body>
     <header>
         <ul>
             <li class="left menu-responsive">
-                <a href="#abrir">Comunidade</a>
+                <a href="#abrir" id="btn-comunidade">
+                    Comunidade <img class="seta" src="images/icone_seta.png" alt="Seta">
+                </a>
             </li>
 
             <div class="centro">
                 <li><a href="#">Especialistas</a></li>
-                <li><a href="#">Galeria</a></li>
+                <li><a href="#" class="ativo">Galeria</a></li>
                 <li><a href="#">Feed</a></li>
             </div>
 
-             <li class="item-pesquisa">
+            <li class="item-pesquisa">
                 <form action="#" method="get">
                     <input type="search" placeholder="Pesquisar na galeria...">
                 </form>
-             </li>
+            </li>
         </ul>
     </header>
     <aside id="abrir">
@@ -153,5 +156,25 @@
             </article>
         </div> <!--Fim da div galeria-cards-->
     </main>
+
+    <script>
+        const btnComunidade = document.getElementById('btn-comunidade');
+        const menuLateral = document.getElementById('abrir');
+        const mascara = document.querySelector('.mask');
+
+        function abrirMenu(event) {
+            event.preventDefault(); // Impede o salto da página pelo href="#abrir"
+            menuLateral.classList.add('ativo');
+            mascara.classList.add('ativo');
+        }
+
+        function fecharMenu() {
+            menuLateral.classList.remove('ativo');
+            mascara.classList.remove('ativo');
+        }
+
+        btnComunidade.addEventListener('click', abrirMenu);
+        mascara.addEventListener('click', fecharMenu);
+    </script>
 </body>
 </html>
