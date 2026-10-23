@@ -1,4 +1,7 @@
-<?php require_once "functions.php"; ?>
+<?php require_once "functions.php";
+	session_start();
+	isset($_SESSION['ativa']) ? "" : header("location: index.php");
+	?>
 <!DOCTYPE html>
 <html>
 <head>

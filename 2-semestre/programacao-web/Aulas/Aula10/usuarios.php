@@ -29,6 +29,7 @@
 <body>
     <h1>Lista de usuários</h1>
     <h2> <?php insertUser($conecta) ?> </h2>
+    <a href="logout.php">Sair</a>
     <form method="post">
         <input type="text" name="nome" required placeholder="Digite seu nome">
         <input type="email" name="email" required placeholder="Digite seu email">

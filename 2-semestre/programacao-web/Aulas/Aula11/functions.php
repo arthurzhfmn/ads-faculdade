@@ -2,8 +2,31 @@
 $server = "localhost";
 $userDb = "root";
 $passDb = "";
-$nameDb = "roblox";
+$nameDb = "qualquer_coisa";
 $conecta = mysqli_connect($server, $userDb, $passDb, $nameDb);
+
+function login($conecta){
+	if(isset($_POST['login'])){
+		$email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+		$senha = $_POST['senha'];
+		if(!empty($email) and !empty($senha)){
+			$sql = "SELECT * FROM usuarios WHERE email = '$email' ";
+			$action = mysqli_query($conecta, $sql);
+			$retorno = mysqli_fetch_assoc($action);
+			if(!empty($retorno['email']) and password_verify($senha, $retorno['senha'])){
+				session_start();
+				$_SESSION['email'] = $retorno['email'];
+				$_SESSION['nome'] = $retorno['nome'];
+				$_SESSION['ativa'] = true;
+				header("location: usuarios.php"); //leva pra pagina usuarios.php
+			}else{
+				echo "Usuário ou senha incorretos!";
+			}
+		}else{
+			echo "Usuário ou senha inválidos";
+		}
+	}
+}
 
 function buscaId($conecta, $id){
 	$id = filter_var($id, FILTER_VALIDATE_INT);

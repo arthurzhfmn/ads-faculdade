@@ -2,7 +2,7 @@
 $server = "localhost";
 $userDb = "root";
 $passDb = "";
-$nameDb = "qualquer_nome";
+$nameDb = "qualquer_coisa";
 $conecta = mysqli_connect($server, $userDb, $passDb, $nameDb);
 
 function buscar($conecta){
