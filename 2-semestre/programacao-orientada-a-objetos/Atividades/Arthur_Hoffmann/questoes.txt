@@ -1,0 +1,9 @@
+Questão 1:
+Ele serve como um espaço reservado para o código não dar erro por estar vazio. Em resumo, ele avisa que todo animal emite som, mas deixa a tarefa de definir qual é o som exato para cada tipo específico de pet (cachorro, gato, etc).
+
+Questão 2:
+O código vai dar erro. O método cantar() foi criado para ser exclusivo da classe Passaro. Como o cachorro só herda o que está na classe geral Animal, ele não tem acesso ao que foi criado especificamente para os pássaros.
+
+Questão 3:
+- Herança: É uma relação de "ser". O cachorro é um animal, então ele herda automaticamente as características gerais dele.
+- Composição: É uma relação de "ter". O animal tem consultas, ou seja, ele apenas usa uma classe separada (Consulta) para guardar e organizar o histórico de atendimentos dele.
