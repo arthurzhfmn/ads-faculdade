@@ -44,5 +44,6 @@ VALUES
 
 INSERT INTO `sistema_produtos`.`usuarios` (`nome`, `email`, `senha`, `data`) 
 VALUES 
-  ('Administrador', 'admin@email.com', '$2y$10$e0MYzXyjpJS7Pd0RVvHwHe1mN7y75gN1pC9g6H2E8xH5X9R5W6M9S', CURDATE()); --senha 123456
+  ('Administrador', 'admin@email.com', '$2y$10$e0MYzXyjpJS7Pd0RVvHwHe1mN7y75gN1pC9g6H2E8xH5X9R5W6M9S', CURDATE()); --senha admin123
+
 
