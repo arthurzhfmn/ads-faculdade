@@ -49,3 +49,9 @@ VALUES
 INSERT INTO `sistema_produtos`.`usuarios` (`nome`, `email`, `senha`, `data`)
 VALUES
   ('Arthur Hoffmann', 'arthurzfhoffmann@gmail.com', '$2y$10$aPu7pDHlAi2RGJVnxoMZceB7xYJN2hnEf0YEayxqXrmP5uP0dQtoW', CURDATE()); --senha Arthur13
+
+INSERT INTO `sistema_produtos` . `categorias`(`nome`, `data`)
+VALUES
+  ('Limpeza', CURDATE()),
+  ('Bomboniére', CURDATE()),
+  ('Tênis', CURDATE());
