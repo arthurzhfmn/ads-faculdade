@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <!-- Link CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Link dos icons Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+
+    <title>Contato - Helius Tech</title>
+</head>
+
+<body>
+    <header id="topo">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand d-flex flex-column align-items-center" href="../index.html">
+                    <img src="../img/logo_helius_tech.png" alt="Logo da Helius Tech" height="45">
+                    <div id="logo">
+                        <span class="cor-cinza">Helius</span> <span class="cor-amarelo">Tech</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <!--Troquei o me-auto (margin end) para margin do eixo X automática (mx-auto) para centralizar a ul-->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="empresa.html">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicos.html">Serviços</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <a class="btn btn-warning text-dark" href="#fale-conosco">Contato</a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header> <!--Fim do header-->
+    <section id="banner-contato" class="bg-primary text-white text-center py-5" style="margin-top: 70px;">
+        <div class="container py-4">
+            <h1 class="fw-bold display-4">Fale com a Helius Tech</h1>
+            <p class="lead mt-3">Estamos prontos para tirar suas dúvidas e calcular sua economia solar.</p>
+        </div>
+    </section>
+
+    <!-- Seção Principal de Contato -->
+    <main class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="row g-5">
+                
+                <!-- Coluna do Formulário -->
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-sm p-4 p-md-5 rounded-3">
+                        <h2 class="fw-bold text-primary mb-4" id="fale-conosco">Envie sua Mensagem</h2>
+                        
+                        <form action="#" method="POST">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label text-secondary">Nome Completo</label>
+                                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="telefone" class="form-label text-secondary">Telefone / WhatsApp</label>
+                                    <input type="tel" class="form-control" id="telefone" placeholder="(00) 00000-0000" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label text-secondary">E-mail</label>
+                                    <input type="email" class="form-control" id="email" placeholder="seu@email.com" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="assunto" class="form-label text-secondary">Assunto</label>
+                                <select class="form-select" id="assunto" required>
+                                    <option value="" selected disabled>Escolha o motivo do contato...</option>
+                                    <option value="orcamento">Orçamento Residencial/Comercial</option>
+                                    <option value="manutencao">Dúvidas sobre Manutenção</option>
+                                    <option value="parceria">Parcerias e Negócios</option>
+                                    <option value="outro">Outros Assuntos</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="mensagem" class="form-label text-secondary">Mensagem</label>
+                                <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-warning w-100 py-3 fw-bold text-dark fs-5 shadow-sm">
+                                Enviar Mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Coluna de Informações e Mapa -->
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow-sm p-4 p-md-4 rounded-3 h-100 bg-white">
+                        <h3 class="fw-bold text-primary mb-4">Nossa Central</h3>
+                        
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="bi bi-geo-alt-fill text-warning fs-3 me-3"></i>
+                            <div>
+                                <h5 class="fw-bold mb-1">Endereço</h5>
+                                <p class="text-secondary mb-0">Porto Alegre, RS - Brasil</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="bi bi-whatsapp text-warning fs-3 me-3"></i>
+                            <div>
+                                <h5 class="fw-bold mb-1">WhatsApp / Telefone</h5>
+                                <p class="text-secondary mb-0">(51) 99999-9999</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="bi bi-envelope-fill text-warning fs-3 me-3"></i>
+                            <div>
+                                <h5 class="fw-bold mb-1">E-mail</h5>
+                                <p class="text-secondary mb-0">contato@heliustech.com.br</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="bi bi-clock-fill text-warning fs-3 me-3"></i>
+                            <div>
+                                <h5 class="fw-bold mb-1">Horário de Atendimento</h5>
+                                <p class="text-secondary mb-0">Segunda a Sexta: 08h às 18h</p>
+                            </div>
+                        </div>
+
+                        <!-- Mapa incorporado do Google Maps (Porto Alegre) -->
+                        <div class="mt-auto pt-3">
+                            <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110421.36545759714!2d-51.2753380430664!3d-30.0324999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197908e2f42a53%3A0x6295e93df44084be!2sPorto%20Alegre%2C%20RS!5e0!3m2!1spt-BR!4v1620000000000!5m2!1spt-BR!2sbr" 
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-primary text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+                
+                <div class="col-lg-4 mb-3">
+                    <div class="d-flex align-items-center mb-3" id="logo">
+                        <span class="fs-4 fw-bold text-white"><span class="cor-cinza">Helius</span> <span class="cor-amarelo">Tech</span></span>
+                    </div>
+                    <p class="text-white">
+                        Transformando energia solar em economia real, sustentabilidade e independência energética para lares e empresas.
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-3">
+                    <h5 class="fw-bold mb-3 text-warning">Navegação</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="pages/empresa.html" class="text-white text-decoration-none">Quem Somos</a></li>
+                        <li class="mb-2"><a href="pages/servicos.html" class="text-white text-decoration-none">Serviços</a></li>
+                        <li class="mb-2"><a href="pages/contato.html" class="text-white text-decoration-none">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <h5 class="fw-bold mb-3 text-warning">Contato</h5>
+                    <p class="text-white mb-2"><i class="bi bi-geo-alt-fill me-2 text-warning"></i> Porto Alegre, RS</p>
+                    <p class="text-white mb-2"><i class="bi bi-whatsapp me-2 text-warning"></i> (51) 99999-9999</p>
+                    <p class="text-white mb-2"><i class="bi bi-envelope-fill me-2 text-warning"></i> contato@heliustech.com.br</p>
+                </div>
+
+                <div class="col-lg-3 mb-3">
+                    <h5 class="fw-bold mb-3 text-warning">Redes Sociais</h5>
+                    <p class="text-white">Acompanhe nossas novidades e projetos nas redes:</p>
+                    <div class="d-flex gap-3 fs-4">
+                        <a href="#" class="text-white hover-warning" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white hover-warning" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white hover-warning" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white hover-warning" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="row text-center text-md-start align-items-center">
+                <div class="col-md-7 text-white small">
+                    &copy; 2026 Helius Tech. Todos os direitos reservados.
+                </div>
+                <div class="col-md-5 text-md-end text-white small mt-2 mt-md-0">
+                    Desenvolvido com tecnologia e sustentabilidade.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                var destino = $(this).attr('href');
+                var elemento = $(destino);
+
+                if (elemento.length && !elemento.hasClass('overlay')) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: elemento.offset().top
+                    }, 700);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

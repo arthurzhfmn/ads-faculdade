@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <!-- Link CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Link dos icons Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+
+    <title>Serviços - Helius Tech</title>
+</head>
+
+<body>
+    <header id="topo">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand d-flex flex-column align-items-center" href="../index.html">
+                    <img src="../img/logo_helius_tech.png" alt="Logo da Helius Tech" height="45">
+                    <div id="logo">
+                        <span class="cor-cinza">Helius</span> <span class="cor-amarelo">Tech</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <!--Troquei o me-auto (margin end) para margin do eixo X automática (mx-auto) para centralizar a ul-->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="empresa.html">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">Serviços</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <a class="btn btn-warning text-dark" href="contato.html">Contato</a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header> <!--Fim do header-->
+
+    <!-- Banner da Página de Serviços -->
+    <section id="banner-servicos" class="bg-primary text-white text-center py-5">
+        <div class="container py-5">
+            <h1 class="fw-bold display-4">Nossos Serviços</h1>
+            <p class="lead mt-3">Da análise de viabilidade à instalação, cuidamos de cada detalhe do seu projeto solar.</p>
+        </div>
+    </section>
+
+    <!-- Detalhamento dos Serviços -->
+    <main class="py-5 bg-light">
+        <div class="container py-4">
+            
+            <!-- Serviço 1: Projetos Residenciais -->
+            <div class="row align-items-center mb-5 bg-white p-4 p-md-5 rounded shadow-sm" id="servicos">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <!-- Você precisará de uma imagem para cá (ex: painel em casa) -->
+                    <img src="../img/servico-residencial.jpg" alt="Energia Solar Residencial" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 px-md-5">
+                    <h2 class="fw-bold text-primary">Sistema Solar Residencial</h2>
+                    <p class="text-secondary mt-3">
+                        Transforme sua casa em uma microusina geradora de energia. Nossa equipe de engenheiros analisa seu consumo mensal e dimensiona o número exato de painéis para que você pare de se preocupar com as bandeiras tarifárias.
+                    </p>
+                    <ul class="text-secondary">
+                        <li>Instalação rápida e limpa.</li>
+                        <li>Equipamentos com até 25 anos de garantia de eficiência.</li>
+                        <li>Homologação completa junto à concessionária local.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Serviço 2: Comercial e Agro (Invertido) -->
+            <div class="row align-items-center mb-5 bg-white p-4 p-md-5 rounded shadow-sm">
+                <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+                    <!-- Imagem para cá (ex: painéis em um galpão comercial) -->
+                    <img src="../img/servico-comercial.jpg" alt="Energia Solar Comercial" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 order-md-1 px-md-5 text-md-end">
+                    <h2 class="fw-bold text-primary">Soluções Corporativas e Agronegócio</h2>
+                    <p class="text-secondary mt-3">
+                        Para empresas e produtores rurais, a energia elétrica é um dos maiores custos operacionais. Desenvolvemos usinas solares no telhado ou em solo que se pagam em curto prazo, aumentando sua margem de lucro.
+                    </p>
+                    <ul class="text-secondary list-unstyled">
+                        <li>Estudo de viabilidade financeira e payback.</li>
+                        <li>Estruturas metálicas de alta resistência.</li>
+                        <li>Suporte a linhas de crédito especiais (BNDES, Pronaf).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Serviço 3: Monitoramento e Manutenção -->
+            <div class="row align-items-center mb-5 bg-white p-4 p-md-5 rounded shadow-sm">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <!-- Imagem para cá (ex: técnico limpando ou olhando um app no celular) -->
+                    <img src="../img/servico-manutencao.jpg" alt="Manutenção de Painéis Solares" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6 px-md-5">
+                    <h2 class="fw-bold text-primary">Monitoramento 24h e Manutenção</h2>
+                    <p class="text-secondary mt-3">
+                        Nosso trabalho não acaba na instalação. Oferecemos um aplicativo onde você acompanha em tempo real quanto está gerando e economizando.
+                    </p>
+                    <ul class="text-secondary">
+                        <li>Limpeza profissional de módulos fotovoltaicos.</li>
+                        <li>Revisão de inversores e cabeamentos.</li>
+                        <li>Alertas automáticos de queda de performance.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Chamada para Ação Final -->
+    <section class="py-5 bg-warning text-center">
+        <div class="container">
+            <h3 class="fw-bold text-dark mb-3">Gostou das nossas soluções?</h3>
+            <p class="text-dark mb-4">Entre em contato agora mesmo e agende uma visita técnica gratuita.</p>
+            <a href="contato.html" class="btn btn-primary btn-lg fw-bold">Falar com um Consultor</a>
+        </div>
+    </section>
+
+    <footer class="bg-primary text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+                
+                <div class="col-lg-4 mb-3">
+                    <div class="d-flex align-items-center mb-3" id="logo">
+                        <span class="fs-4 fw-bold text-white"><span class="cor-cinza">Helius</span> <span class="cor-amarelo">Tech</span></span>
+                    </div>
+                    <p class="text-white">
+                        Transformando energia solar em economia real, sustentabilidade e independência energética para lares e empresas.
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-3">
+                    <h5 class="fw-bold mb-3 text-warning">Navegação</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="pages/empresa.html" class="text-white text-decoration-none">Quem Somos</a></li>
+                        <li class="mb-2"><a href="pages/ervicos.html" class="text-white text-decoration-none">Serviços</a></li>
+                        <li class="mb-2"><a href="pages/contato.html" class="text-white text-decoration-none">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <h5 class="fw-bold mb-3 text-warning">Contato</h5>
+                    <p class="text-white mb-2"><i class="bi bi-geo-alt-fill me-2 text-warning"></i> Porto Alegre, RS</p>
+                    <p class="text-white mb-2"><i class="bi bi-whatsapp me-2 text-warning"></i> (51) 99999-9999</p>
+                    <p class="text-white mb-2"><i class="bi bi-envelope-fill me-2 text-warning"></i> contato@heliustech.com.br</p>
+                </div>
+
+                <div class="col-lg-3 mb-3">
+                    <h5 class="fw-bold mb-3 text-warning">Redes Sociais</h5>
+                    <p class="text-white">Acompanhe nossas novidades e projetos nas redes:</p>
+                    <div class="d-flex gap-3 fs-4">
+                        <a href="#" class="text-white hover-warning" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white hover-warning" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white hover-warning" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white hover-warning" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="row text-center text-md-start align-items-center">
+                <div class="col-md-7 text-white small">
+                    &copy; 2026 Helius Tech. Todos os direitos reservados.
+                </div>
+                <div class="col-md-5 text-md-end text-white small mt-2 mt-md-0">
+                    Desenvolvido com tecnologia e sustentabilidade.
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Smooth scroll -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                var destino = $(this).attr('href');
+                var elemento = $(destino);
+
+                if (elemento.length && !elemento.hasClass('overlay')) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: elemento.offset().top
+                    }, 700);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

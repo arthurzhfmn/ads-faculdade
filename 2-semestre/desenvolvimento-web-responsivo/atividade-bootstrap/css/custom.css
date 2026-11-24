@@ -1,0 +1,42 @@
+#logo {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 2px;
+}
+
+.cor-cinza {
+    color: #1f1e1c;
+}
+
+.cor-amarelo {
+    color: #ffbb00;
+}
+
+.imagem-carrossel {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+#banner {
+    background: url(../img/empresa-helius.jpg) no-repeat center right;
+    background-size: 55% auto;
+}
+
+#banner .row {
+    height: 90vh;
+    background: linear-gradient(90deg, #fff 48%, transparent 100%);
+}
+
+@media (max-width: 576px) {
+
+    .carousel-caption h3,
+    .carousel-caption h5 {
+        font-size: 1.1rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.85rem;
+    }
+}
